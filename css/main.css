@@ -7,6 +7,7 @@
 
 body {
   font-family: "Playfair Display", sans-serif;
+  color: #626262;
 }
 
 .nav {
@@ -29,15 +30,129 @@ body {
 .nav-list li a {
   color: #000;
   text-decoration: none;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 3s ease-out;
+  transition: all 3s ease-out;
 }
 .nav-list li a:hover {
-  color: rgb(68, 68, 68);
+  color: #626262;
   text-decoration: underline;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 3s ease-out;
+  transition: all 3s ease-out;
 }
 .nav-list li:last-child {
   padding-right: 0;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 80vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main {
+  margin-top: 30px !important;
+}
+.main img {
+  width: 100%;
+  margin-bottom: 90px;
+}
+.main .main-subtitle {
+  margin-bottom: 25px;
+}
+.main .main-title {
+  font-size: 1.5rem;
+  margin-bottom: 35px;
+}
+.main .main-text {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin-bottom: 75px;
+}
+.main .main-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #b4ad9e;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+.main .main-btn:hover {
+  text-decoration: underline;
+  color: #626262;
+}
+
+.category a {
+  color: #b4ad9e;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+.category a:hover {
+  text-decoration: underline;
+  color: #626262;
+}
+
+.img-responsive {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+}
+.img-responsive img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.next {
+  margin-top: 90px !important;
+  margin-bottom: 130px !important;
+}
+.next .post h4 {
+  margin: 30px 0;
+}
+.next .post h2 {
+  margin-bottom: 30px;
+}
+.next .post p {
+  margin-bottom: 50px;
+}
+
+.newsletter {
+  height: 280px;
+  background: #f0f0f0;
+  padding-top: 70px;
+}
+.newsletter .sign {
+  color: #626262;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.newsletter form {
+  width: 400px;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;
+  padding-bottom: 6px;
+}
+.newsletter form input {
+  border: none;
+  background: inherit;
+}
+.newsletter form button {
+  float: right;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
